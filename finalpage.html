@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Final Page 💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+   
+   * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(145deg, #121b22, #1a2e35);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .container {
+      max-width: 500px;
+      background: #1e2f38;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.6);
+      padding: 40px 30px;
+      text-align: center;
+      position: relative;
+      animation: slideUp 1.5s ease-out;
+    }
+    @keyframes slideUp {
+      from { transform: translateY(100px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    h1 {
+      font-size: 26px;
+      margin-bottom: 20px;
+      color: #00ffe0;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+    .footer {
+      font-size: 14px;
+      color: #aaa;
+      margin-top: 40px;
+    } /* Your styles here */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>💌 The End of a Journey...</h1>
+    <p>Thank you so much for everything. I feel truly blessed to have shared this with you.</p>
+    <div class="footer">
+      I’ll carry this moment in my heart forever. 💖
+    </div>
+  </div>
+  <script>
+    // Redirect back to the first page if this page is refreshed
+    if (performance.navigation.type === 1) {
+      window.location.href = "index.html";
+    }
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,161 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Secret Confession 💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <style>
+   
+   * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(145deg, #121b22, #1a2e35);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .container {
+      max-width: 500px;
+      background: #1e2f38;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.6);
+      padding: 40px 30px;
+      text-align: center;
+      position: relative;
+      animation: slideUp 1.5s ease-out;
+    }
+    @keyframes slideUp {
+      from { transform: translateY(100px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    h1 {
+      font-size: 26px;
+      margin-bottom: 20px;
+      color: #00ffe0;
+    }
+    .heart {
+      font-size: 60px;
+      margin: 20px 0;
+      animation: pulse 2s infinite;
+      color: #ff6ec7;
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+    .signature {
+      font-style: italic;
+      color: #ccc;
+    }
+    .footer {
+      font-size: 14px;
+      color: #aaa;
+      margin-top: 40px;
+    }
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+    .reply-box {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      animation: fadeIn 3s ease forwards;
+      opacity: 0;
+      animation-delay: 7s;
+      animation-fill-mode: forwards;
+    }
+    .reply-box input, .reply-box button {
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+    .reply-box input {
+      background-color: #2f3e46;
+      color: white;
+    }
+    .reply-box button {
+      background-color: #00ffe0;
+      color: #1e2f38;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .reply-box button:hover {
+      background-color: #00c9b8;
+    } /* Your styles here */
+  </style>
+</head>
+<body>
+  <audio autoplay loop>
+    <source src="https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Komiku/Komiku_-_It_s_time_for_adventure_/Komiku_-_03_-_Goodbye_Summer.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <div class="container">
+    <h1 class="fade-in">💌 A Little Secret I’ve Been Holding Onto...</h1>
+    <div class="heart fade-in">❤️</div>
+    <p class="fade-in" style="animation-delay: 1s; animation-fill-mode: both;">
+     HEY <strong style="color: orange;">chebet</strong> ... I don’t know how to say this perfectly, but it’s something I’ve wanted to say for a long time.
+    </p>
+    <p class="fade-in" style="animation-delay: 2s; animation-fill-mode: both;">
+      You’ve been on my mind more times than I can count. Your smile, your energy, your presence—it’s all so beautiful to me.
+    </p>
+    <p class="fade-in" style="animation-delay: 3s; animation-fill-mode: both;">
+      I have a <strong style="color: fuchsia;">crush on you</strong> 💖. A deep, real one. And it’s not just a passing feeling—it's been growing.
+    </p>
+    <p class="fade-in" style="animation-delay: 4s; animation-fill-mode: both;">
+      You inspire something in me—joy, curiosity, hope. I’m writing this because I want to be honest about how I feel.
+    </p>
+    <p class="fade-in" style="animation-delay: 4.5s; animation-fill-mode: both;">
+      If your heart feels the same, even just a little... that would mean the world to me.
+    </p>
+    <p class="fade-in" style="animation-delay: 4.5s; animation-fill-mode: both;">
+        <strong style="color: blue;">NEY </strong><strong style="color: chartreuse;">koswon n'galeju, kirachamin nenyun tukul.</strong> 
+        
+      </p>
+
+      
+    <p class="signature fade-in" style="animation-delay: 5s; animation-fill-mode: both;">
+      – Ezra 💌
+    </p>
+    <div class="footer fade-in" style="animation-delay: 6s; animation-fill-mode: both;">
+      This message was crafted with heart... for someone truly special.
+    </div>
+    <div class="reply-box">
+      <input type="text" id="reply" placeholder="Chebet, type your reply here... 💬">
+      <button onclick="submitReply()">Send Reply 💌</button>
+    </div>
+  </div>
+  <script>
+    function submitReply() {
+      const reply = document.getElementById('reply').value.trim();
+      if(reply) {
+        // Save the response to sessionStorage to track the stage
+        sessionStorage.setItem('userReply', reply);
+        // Redirect to the thank you page
+        window.location.href = 'thankyou.html';
+      } else {
+        alert("Please type something before sending.");
+      }
+    }
+  </script>
+</body>
+</html>

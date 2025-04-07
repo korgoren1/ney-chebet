@@ -1,0 +1,82 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thank You 💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(145deg, #121b22, #1a2e35);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .container {
+      max-width: 500px;
+      background: #1e2f38;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.6);
+      padding: 40px 30px;
+      text-align: center;
+      position: relative;
+      animation: slideUp 1.5s ease-out;
+    }
+    @keyframes slideUp {
+      from { transform: translateY(100px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    h1 {
+      font-size: 26px;
+      margin-bottom: 20px;
+      color: #00ffe0;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+    .signature {
+      font-style: italic;
+      color: #ccc;
+    }
+    .footer {
+      font-size: 14px;
+      color: #aaa;
+      margin-top: 40px;
+    }  /* Your styles here */
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>💖 Thank You!</h1>
+    <p>Your reply is so special to me. I’m thrilled you took the time to respond!</p>
+    <p style="color: chartreuse;">kongoi neon chebet kariyai kit nemie.</p>
+    <p class="signature">– Ezra 💌</p>
+    <div class="footer">
+      Your response has made my heart leap with joy. I'll treasure this forever.
+    </div>
+    <button onclick="goToFinalPage()">Continue to See What's Next 💖</button>
+  </div>
+
+  <script>
+    function goToFinalPage() {
+      // Redirect to final confirmation page
+      window.location.href = 'finalpage.html';
+    }
+
+    // Optional: Redirect after a few seconds if you prefer automatic navigation
+    setTimeout(function() {
+      window.location.href = 'finalpage.html';
+    }, 7000); // Redirects after 3 seconds
+  </script>
+</body>
+</html>
