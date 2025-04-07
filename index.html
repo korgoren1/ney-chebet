@@ -8,30 +8,36 @@
   <meta charset="UTF-8">
   <title>My Secret Confession 💖</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
  
   <style>
    
    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(145deg, #121b22, #1a2e35);
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      overflow: hidden;
-    }
-    .container {
-      max-width: 500px;
-      background: #1e2f38;
-      border-radius: 20px;
-      box-shadow: 0 0 30px rgba(0,0,0,0.6);
-      padding: 40px 30px;
-      text-align: center;
-      position: relative;
-      animation: slideUp 1.5s ease-out;
-    }
+   body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(145deg, #121b22, #1a2e35);
+  color: white;
+  min-height: 100vh;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  background: #1e2f38;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.6);
+  padding: 30px 20px;
+  text-align: center;
+  position: relative;
+  animation: slideUp 1.5s ease-out;
+}
+
     @keyframes slideUp {
       from { transform: translateY(100px); opacity: 0; }
       to { transform: translateY(0); opacity: 1; }
@@ -101,7 +107,25 @@
     }
     .reply-box button:hover {
       background-color: #00c9b8;
-    } /* Your styles here */
+    }
+    @media (max-width: 400px) {
+  .container {
+    padding: 20px 15px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .heart {
+    font-size: 40px;
+  }
+}
+/* Your styles here */
   </style>
 </head>
 <body>
